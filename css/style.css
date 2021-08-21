@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrap-gift {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#top-gift, #top-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #00517A;
+}
+
+#top-header {
+    color: #fff;
+    font-size: 2rem;
+    z-index: 4;
+}
+
+#gift-img, #top-gift {
+    width: 120px;
+    height: 120px;
+}
+
+#btn-pause, #pause-message {
+    display: none;
+}
+
+#wrap-ball {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ball, .ball__center {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6E00;
+    border-radius: 50%;
+    margin: 8px;
+    z-index: 2;
+    color: #333;
+}
+
+.ball__center {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.ball.disable, .ball.disable .ball__center {
+    background-color: #ccc;
+    color: #616161;
+}
