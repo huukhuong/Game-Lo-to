@@ -7,14 +7,12 @@ $(document).ready(function () {
     var pauseMessage = $('#pause-message');
 
     for (i = 1; i < 90; i++) {
-        let val = i + 1;
+        let val = i;
         let num = val < 10 ? '0' + val : val;
         arr[i] = num;
-
     }
 
     var auto = true;
-
 
     btnPlay.click(function () {
         btnPlay.prop('disabled', true);
